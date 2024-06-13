@@ -20,7 +20,6 @@
     "types": [
       "node",
       "vite-plugin-vue-layouts/client",
-      "user-agent-data-types"
     ],
     "paths": {
       "@/*": ["./src/*"]

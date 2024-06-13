@@ -26,26 +26,6 @@ const recursiveLayouts = (route: RouteRecordRaw): RouteRecordRaw => {
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   extendRoutes: routes => routes.map(route => recursiveLayouts(route)),
-  scrollBehavior(to, _from, savedPosition) {
-    if (to.hash) {
-      let top = 0
-
-      if (useBreakpoints().smAndSmaller.value)
-        top = 70
-
-      return {
-        el: to.hash,
-        top,
-      }
-    }
-
-    if (savedPosition)
-      return savedPosition
-
-    return {
-      top: 0,
-    }
-  },
   routes,
 })
 

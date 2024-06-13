@@ -1,7 +1,6 @@
 {
   "name": "desgastar-front",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +8,7 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build --force",
+    "type-check": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {

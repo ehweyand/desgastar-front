@@ -1,0 +1,386 @@
+// Regras para classe que iniciar com 'grid-' (display: grid)
+[class*="grid-"] {
+  display: grid;
+
+  @for $i from 1 through 10 {
+      &.grid-#{$i} {
+          grid-template-columns: repeat(#{$i}, 1fr);
+      }
+  }
+
+  @media (min-width: $sm) {
+      @for $i from 1 through 10 {
+          &.grid-sm-#{$i} {
+              grid-template-columns: repeat(#{$i}, 1fr);
+          }
+      }
+  }
+  @media (min-width: $md) {
+      @for $i from 1 through 10 {
+          &.grid-md-#{$i} {
+              grid-template-columns: repeat(#{$i}, 1fr);
+          }
+      }
+  }
+  @media (min-width: $lg) {
+      @for $i from 1 through 10 {
+          &.grid-lg-#{$i} {
+              grid-template-columns: repeat(#{$i}, 1fr);
+          }
+      }
+  }
+  @media (min-width: $xl) {
+      @for $i from 1 through 10 {
+          &.grid-xl-#{$i} {
+              grid-template-columns: repeat(#{$i}, 1fr);
+          }
+      }
+  }
+  @media (min-width: $xxl) {
+      @for $i from 1 through 10 {
+          &.grid-xxl-#{$i} {
+              grid-template-columns: repeat(#{$i}, 1fr);
+          }
+      }
+  }
+}
+
+.gap{
+  gap: 24px;
+}
+
+// [[margin-bottom]] baseado nos espaçamentos padroes
+.mb-maior {
+  margin-bottom: var(--espacamento-maior);
+}
+.mb-media {
+  margin-bottom: var(--espacamento-media);
+}
+.mb-normal {
+  margin-bottom: var(--espacamento-normal);
+}
+.mb-menor {
+  margin-bottom: var(--espacamento-menor);
+}
+@media (min-width: $xxl) {
+  .mb-xxl-maior {
+      margin-bottom: var(--espacamento-maior) !important;
+  }
+  .mb-xxl-media {
+      margin-bottom: var(--espacamento-media) !important;
+  }
+  .mb-xxl-normal {
+      margin-bottom: var(--espacamento-normal) !important;
+  }
+  .mb-xxl-menor {
+      margin-bottom: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $xl) {
+  .mb-xl-maior {
+      margin-bottom: var(--espacamento-maior) !important;
+  }
+  .mb-xl-media {
+      margin-bottom: var(--espacamento-media) !important;
+  }
+  .mb-xl-normal {
+      margin-bottom: var(--espacamento-normal) !important;
+  }
+  .mb-xl-menor {
+      margin-bottom: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $lg) {
+  .mb-lg-maior {
+      margin-bottom: var(--espacamento-maior) !important;
+  }
+  .mb-lg-media {
+      margin-bottom: var(--espacamento-media) !important;
+  }
+  .mb-lg-normal {
+      margin-bottom: var(--espacamento-normal) !important;
+  }
+  .mb-lg-menor {
+      margin-bottom: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $md) {
+  .mb-md-maior {
+      margin-bottom: var(--espacamento-maior) !important;
+  }
+  .mb-md-media {
+      margin-bottom: var(--espacamento-media) !important;
+  }
+  .mb-md-normal {
+      margin-bottom: var(--espacamento-normal) !important;
+  }
+  .mb-md-menor {
+      margin-bottom: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $sm) {
+  .mb-sm-maior {
+      margin-bottom: var(--espacamento-maior) !important;
+  }
+  .mb-sm-media {
+      margin-bottom: var(--espacamento-media) !important;
+  }
+  .mb-sm-normal {
+      margin-bottom: var(--espacamento-normal) !important;
+  }
+  .mb-sm-menor {
+      margin-bottom: var(--espacamento-menor) !important;
+  }
+}
+
+// [[margin-top]] baseado nos espaçamentos padroes
+.mt-maior {
+  margin-top: var(--espacamento-maior) !important;
+}
+.mt-media {
+  margin-top: var(--espacamento-media) !important;
+}
+.mt-normal {
+  margin-top: 30px !important;
+}
+.mt-menor {
+  margin-top: var(--espacamento-menor) !important;
+}
+@media (min-width: $xxl) {
+  .mt-xxl-maior {
+      margin-top: var(--espacamento-maior) !important;
+  }
+  .mt-xxl-media {
+      margin-top: var(--espacamento-media) !important;
+  }
+  .mt-xxl-normal {
+      margin-top: var(--espacamento-normal) !important;
+  }
+  .mt-xxl-menor {
+      margin-top: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $xl) {
+  .mt-xl-maior {
+      margin-top: var(--espacamento-maior) !important;
+  }
+  .mt-xl-media {
+      margin-top: var(--espacamento-media) !important;
+  }
+  .mt-xl-normal {
+      margin-top: var(--espacamento-normal) !important;
+  }
+  .mt-xl-menor {
+      margin-top: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $lg) {
+  .mt-lg-maior {
+      margin-top: var(--espacamento-maior) !important;
+  }
+  .mt-lg-media {
+      margin-top: var(--espacamento-media) !important;
+  }
+  .mt-lg-normal {
+      margin-top: var(--espacamento-normal) !important;
+  }
+  .mt-lg-menor {
+      margin-top: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $md) {
+  .mt-md-maior {
+      margin-top: var(--espacamento-maior) !important;
+  }
+  .mt-md-media {
+      margin-top: var(--espacamento-media) !important;
+  }
+  .mt-md-normal {
+      margin-top: var(--espacamento-normal) !important;
+  }
+  .mt-md-menor {
+      margin-top: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $sm) {
+  .mt-sm-maior {
+      margin-top: var(--espacamento-maior) !important;
+  }
+  .mt-sm-media {
+      margin-top: var(--espacamento-media) !important;
+  }
+  .mt-sm-normal {
+      margin-top: var(--espacamento-normal) !important;
+  }
+  .mt-sm-menor {
+      margin-top: var(--espacamento-menor) !important;
+  }
+}
+
+// [[padding-bottom]] baseado nos espaçamentos padroes
+.pb-maior {
+  padding-bottom: var(--espacamento-maior);
+}
+.pb-media {
+  padding-bottom: var(--espacamento-media);
+}
+.pb-normal {
+  padding-bottom: var(--espacamento-normal);
+}
+.pb-menor {
+  padding-bottom: var(--espacamento-menor);
+}
+@media (min-width: $xxl) {
+  .pb-xxl-maior {
+      padding-bottom: var(--espacamento-maior) !important;
+  }
+  .pb-xxl-media {
+      padding-bottom: var(--espacamento-media) !important;
+  }
+  .pb-xxl-normal {
+      padding-bottom: var(--espacamento-normal) !important;
+  }
+  .pb-xxl-menor {
+      padding-bottom: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $xl) {
+  .pb-xl-maior {
+      padding-bottom: var(--espacamento-maior) !important;
+  }
+  .pb-xl-media {
+      padding-bottom: var(--espacamento-media) !important;
+  }
+  .pb-xl-normal {
+      padding-bottom: var(--espacamento-normal) !important;
+  }
+  .pb-xl-menor {
+      padding-bottom: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $lg) {
+  .pb-lg-maior {
+      padding-bottom: var(--espacamento-maior) !important;
+  }
+  .pb-lg-media {
+      padding-bottom: var(--espacamento-media) !important;
+  }
+  .pb-lg-normal {
+      padding-bottom: var(--espacamento-normal) !important;
+  }
+  .pb-lg-menor {
+      padding-bottom: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $md) {
+  .pb-md-maior {
+      padding-bottom: var(--espacamento-maior) !important;
+  }
+  .pb-md-media {
+      padding-bottom: var(--espacamento-media) !important;
+  }
+  .pb-md-normal {
+      padding-bottom: var(--espacamento-normal) !important;
+  }
+  .pb-md-menor {
+      padding-bottom: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $sm) {
+  .pb-sm-maior {
+      padding-bottom: var(--espacamento-maior) !important;
+  }
+  .pb-sm-media {
+      padding-bottom: var(--espacamento-media) !important;
+  }
+  .pb-sm-normal {
+      padding-bottom: var(--espacamento-normal) !important;
+  }
+  .pb-sm-menor {
+      padding-bottom: var(--espacamento-menor) !important;
+  }
+}
+
+// [[padding-top]] baseado nos espaçamentos padroes
+.pt-maior {
+  padding-top: var(--espacamento-maior);
+}
+.pt-media {
+  padding-top: var(--espacamento-media);
+}
+.pt-normal {
+  padding-top: var(--espacamento-normal);
+}
+.pt-menor {
+  padding-top: var(--espacamento-menor);
+}
+@media (min-width: $xxl) {
+  .pt-xxl-maior {
+      padding-top: var(--espacamento-maior) !important;
+  }
+  .pt-xxl-media {
+      padding-top: var(--espacamento-media) !important;
+  }
+  .pt-xxl-normal {
+      padding-top: var(--espacamento-normal) !important;
+  }
+  .pt-xxl-menor {
+      padding-top: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $xl) {
+  .pt-xl-maior {
+      padding-top: var(--espacamento-maior) !important;
+  }
+  .pt-xl-media {
+      padding-top: var(--espacamento-media) !important;
+  }
+  .pt-xl-normal {
+      padding-top: var(--espacamento-normal) !important;
+  }
+  .pt-xl-menor {
+      padding-top: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $lg) {
+  .pt-lg-maior {
+      padding-top: var(--espacamento-maior) !important;
+  }
+  .pt-lg-media {
+      padding-top: var(--espacamento-media) !important;
+  }
+  .pt-lg-normal {
+      padding-top: var(--espacamento-normal) !important;
+  }
+  .pt-lg-menor {
+      padding-top: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $md) {
+  .pt-md-maior {
+      padding-top: var(--espacamento-maior) !important;
+  }
+  .pt-md-media {
+      padding-top: var(--espacamento-media) !important;
+  }
+  .pt-md-normal {
+      padding-top: var(--espacamento-normal) !important;
+  }
+  .pt-md-menor {
+      padding-top: var(--espacamento-menor) !important;
+  }
+}
+@media (min-width: $sm) {
+  .pt-sm-maior {
+      padding-top: var(--espacamento-maior) !important;
+  }
+  .pt-sm-media {
+      padding-top: var(--espacamento-media) !important;
+  }
+  .pt-sm-normal {
+      padding-top: var(--espacamento-normal) !important;
+  }
+  .pt-sm-menor {
+      padding-top: var(--espacamento-menor) !important;
+  }
+}

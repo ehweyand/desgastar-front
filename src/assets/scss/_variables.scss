@@ -1,0 +1,205 @@
+// Variaveis
+
+// :root {
+//   /* font-family e cores */
+//   --fonte-padrao: "SF Pro Display", sans-serif;
+//   --letter-spacing: 0.4px;
+//   --line-height: 1.3em;
+//   --line-height-paragraph: 1.5em;
+
+//   --cor-fonte: #f2f2f2;
+//   --cor-fonte-rgb: 242, 242, 242;
+//   --cor-site: #111114;
+//   --cor-site-rgb: 17, 17, 20;
+
+//   /* novas variáveis */
+//   --cor-container-header: #0E0E11;
+//   --cor-hover-side-menu: #000000;
+//   --cor-fonte-fundo-azul: #f2f2f2;
+
+//   --cor-branco: #ffffff;
+//   --cor-primaria: #131317;
+//   --cor-primaria-rgb: 19, 19, 23;
+//   --cor-secundaria: #17171c;
+//   --cor-secundaria-rgb: 23, 23, 28;
+//   --cor-terciaria: #252530;
+//   --cor-terciaria-rgb: 37, 37, 48;
+//   --cor-border: #4B4949;
+//   --cor-auxiliar: #1D1D24;
+//   --cor-auxiliar-rgb: 29, 29, 36;
+//   --cor-destaque: #237FE6;
+//   --cor-cinza: #A4A4AC;
+//   --cor-cinza-rgb: 164, 164, 172;
+//   --cor-amarelo: #fed046;
+//   --cor-azul: #14e0fb;
+//   --cor-vermelho: #f5406b;
+//   --cor-verde: #89F38C;
+//   --cor-laranja: #e16b1e;
+//   --cor-aprovado: #89F38C;
+//   --cor-erro: #f5406b;
+//   --cor-erro-rgb: 245, 64, 107;
+//   --cor-card-hover: #343232;
+//   --modal-backdrop: rgba(24, 24, 27, 0.92);
+
+//   /* variaveis cartao */
+//   --cor-fundo-cartao: #237FE6;
+//   --cor-chips: #f2f2f2;
+//   --cor-band-verse: #252530;
+//   --cor-borda: #A4A4AC;
+//   --cor-borda-rgb: 164, 164, 172;
+
+//   --cor-whatsapp: #25d366;
+//   --cor-facebook: #1877f2;
+//   --cor-instagram: #e4405f;
+//   --cor-twitter: #1da1f2;
+//   --cor-linkedin: #0a66c2;
+//   --cor-youtube: #cd201f;
+//   --cor-vimeo: #1ab7ea;
+//   --cor-pinterest: #bd081c;
+
+//   /* gradientes */
+//   --gradiente-azul-rosa: transparent linear-gradient(180deg, #4CE5F3 0%, #9D35E2 100%) 0% 0% no-repeat padding-box;
+//   --gradiente-azul: transparent linear-gradient(122deg, #FFFFFF66 0%, #FFFFFF0D 100%) 0% 0% no-repeat padding-box;
+//   --gradiente-rosa: transparent linear-gradient(180deg, #FB2E94 0%, #9D35E2 100%) 0% 0% no-repeat padding-box;
+//   --gradiente-laranja: transparent linear-gradient(180deg, #FF9900 0%, #FB2E94 100%) 0% 0% no-repeat padding-box;
+//   --gradiente-roxo: transparent linear-gradient(180deg, #9D35E2 0%, #FB2E94 100%) 0% 0% no-repeat padding-box;
+
+
+//   /* gradientes banners destaque da home */
+//   --azul: linear-gradient(0deg, rgba(4, 89, 174, 1) 0%, rgba(48, 164, 226, 1) 82%, rgba(0, 167, 255, 1) 100%);
+
+//   /* tamanho de fontes (base 16px) */
+//   --fonte-10px: 10px;
+//   --fonte-11px: 11px;
+//   --fonte-12px: 12px;
+//   --fonte-13px: 13px;
+//   --fonte-14px: 14px;
+//   --fonte-15px: 0.9375rem;
+//   --fonte-16px: 1rem;
+//   --fonte-17px: 1.0625rem;
+//   --fonte-18px: 1.125rem;
+//   --fonte-20px: 1.25rem;
+//   --fonte-22px: 1.375rem;
+//   --fonte-24px: 1.5rem;
+//   --fonte-26px: 1.5625rem;
+//   --fonte-28px: 1.75rem;
+//   --fonte-30px: 1.875rem;
+//   --fonte-32px: 2rem;
+//   --fonte-34px: 2.125rem;
+//   --fonte-36px: 2.25rem;
+//   --fonte-38px: 2.375rem;
+//   --fonte-40px: 2.5rem;
+//   --fonte-42px: 2.625rem;
+//   --fonte-44px: 2.75rem;
+//   --fonte-46px: 2.875rem;
+//   --fonte-48px: 3rem;
+//   --fonte-50px: 3.125rem;
+
+//   /* tamanho padrão de fontes */
+//   --fonte-extra-pequena: 12px; /* 12px */
+//   --fonte-pequena: 14px; /* 14px */
+//   --fonte-tamanho-padrao: 1rem; /* 16px */
+//   --fonte-media: 1.125rem; /* 18px */
+//   --fonte-media-grande: 1.375rem; /* 22px */
+//   --fonte-grande: 1.5rem; /* 24px */
+//   --fonte-extra-grande: 2rem; /* 32px */
+
+//   /* espaçamentos padrões */
+//   --espacamento-maior: 64px;
+//   --espacamento-media: 40px;
+//   --espacamento-normal: 30px;
+//   --espacamento-menor: 15px;
+//   --espacamento-header-mobile: 70px;
+
+//   /* valor padrão de linhas do line-clamp */
+//   --lines: 1;
+
+//   /* larguras / tamanhos / gerais - padrões para ser utilizado em tudo */
+//   --grid-gutter-width: 30px;
+//   --grid-columns: 12;
+//   --gap-cards: 15px;
+//   --borda: 56px;
+//   /*--tamanho-sidebar: 140px;*/
+//   /* com a mudança do grid */
+//   --tamanho-sidebar: 112px;
+//   --tamanho-sidebar-aberto: 300px;
+//   --sidebar-conteudo: 330px;
+//   /* --tamanho-container: calc(100vw - var(--grid-gutter-width)); */
+//   --tamanho-container: calc(1140px - var(--grid-gutter-width));
+//   --tamanho-borda: calc(calc(100vw - var(--tamanho-container)) / 2);
+
+//   /* Down XXL */
+//   @media (max-width: $xxl) {
+//     --borda: 42px;
+//     --sidebar-conteudo: 280px;
+//     --tamanho-sidebar-aberto: 240px;
+
+//     --fonte-media: 1rem; /* 16px */
+//     --fonte-grande: 1.375rem; /* 22px */
+//   }
+
+//   /* Down XL */
+//   @media (max-width: $xl) {
+//     --largura-menu-mobile: 300px;
+//     --largura-submenu-mobile: 250px;
+//     --espacamento-media: 30px;
+//     --fonte-tamanho-padrao: 0.875rem; /* 14px */
+//     --fonte-grande: 1.25rem; /* 20px */
+//     --tamanho-container: calc(960px - var(--grid-gutter-width));
+//   }
+
+//   /* Down LG */
+//   @media (max-width: $lg) {
+//     --borda: 20px;
+//     --sidebar-conteudo: 240px;
+//     --espacamento-media: 25px;
+//     --espacamento-maior: 40px;
+//     --espacamento-normal: 20px;
+//     --tamanho-container: calc(720px - var(--grid-gutter-width));
+//   }
+
+//   /* Down MD */
+//   @media (max-width: $md) {
+//     --tamanho-container: calc(540px - var(--grid-gutter-width));
+//   }
+
+//   /* Down SM */
+//   @media (max-width: $sm) {
+//     --fonte-grande: 1.125rem; /* 18px */
+//     --gap-cards: 10px;
+//     --borda: 15px;
+//     --espacamento-menor: 12px;
+//     --grid-gutter-width: 15px;
+//     --tamanho-container: calc(100vw - var(--grid-gutter-width));
+//     --tamanho-borda: calc(var(--grid-gutter-width) * 0.5);
+//   }
+
+//   --tamanho-coluna: calc(calc(var(--tamanho-container) - var(--grid-gutter-width)) / var(--grid-columns));
+
+//   /* Backdrop padrão dos dialogs, necessário iniciar a variavel aqui para ser acessível no psedo-elemento */
+//   ::backdrop {
+//     --modal-backdrop: rgba(24, 24, 27, 0.92);
+//   }
+// }
+
+// /*LIGHT MODE*/
+// :root[data-theme='light'] {
+//   --cor-site: #D7D7D7;
+//   --cor-site-rgb: 215, 215, 215;
+//   --cor-secundaria: #E6E6E6;
+//   --cor-secundaria-rgb: 230, 230, 230;
+//   --cor-auxiliar: #F2F2F2;
+//   --cor-auxiliar-rgb: 242, 242, 242;
+//   --cor-terciaria: #FFFFFF;
+//   --cor-terciaria-rgb: 255, 255, 255;
+//   --cor-fonte: #121212;
+//   --cor-fonte-rgb: 18, 18, 18;
+//   --cor-cinza: #646464;
+//   --cor-cinza-rgb: 100, 100, 100;
+//   --cor-aprovado: #237FE6;
+//   --cor-container-header: #D7D7D7;
+//   --cor-hover-side-menu: #FFFFFF;
+//   --cor-verde: #237FE6;
+//   --cor-primaria: #F2F2F2;
+//   --cor-primaria-rgb: 242, 242, 242;
+// }

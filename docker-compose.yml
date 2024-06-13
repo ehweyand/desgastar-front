@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  frontend:
+    container_name: desgastar-front
+    build:
+      context: .
+    networks:
+      - desgastar_network
+
+networks:
+  desgastar_network:
+    external: true
